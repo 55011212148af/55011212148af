@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EE30B802-1AE1-44C7-A8C8-852480822820</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IOS8SwiftPrototypeCellsTutorial</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>56C6B667829D6E99B84B72E59221CB0B1C7A1CDA</key>
+		<string>https://github.com/55011212148af/55011212148af.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IOS8SwiftPrototypeCellsTutorial/IOS8SwiftPrototypeCellsTutorial.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>56C6B667829D6E99B84B72E59221CB0B1C7A1CDA</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/55011212148af/55011212148af.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>56C6B667829D6E99B84B72E59221CB0B1C7A1CDA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>56C6B667829D6E99B84B72E59221CB0B1C7A1CDA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>55011212148af</string>
+		</dict>
+	</array>
+</dict>
+</plist>
