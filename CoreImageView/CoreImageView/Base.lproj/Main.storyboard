@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CoreImageView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jUL-UO-pzF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jUL-UO-pzF" secondAttribute="height" multiplier="8:5" id="RlG-iN-bGb"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sR4-bQ-UrY">
+                                <rect key="frame" x="200" y="415" width="200" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klL-o5-YdC">
+                                <rect key="frame" x="495" y="528" width="89" height="30"/>
+                                <state key="normal" title="Photo Album">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZJ-AF-Wyi">
+                                <rect key="frame" x="16" y="522" width="101" height="30"/>
+                                <state key="normal" title="Save to Album">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadPhoto:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HTd-4R-uke"/>
+                                    <action selector="savePhoto:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MEB-9A-bfy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jUL-UO-pzF" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-28" id="9df-TN-e4y"/>
+                            <constraint firstItem="jUL-UO-pzF" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-28" id="Grn-BL-r2F"/>
+                            <constraint firstItem="jUL-UO-pzF" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="eYj-NG-EIb"/>
+                            <constraint firstAttribute="centerX" secondItem="jUL-UO-pzF" secondAttribute="centerX" id="lHg-Yx-Dpb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="UllmageCiew" destination="jUL-UO-pzF" id="XUQ-ZR-U5v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
