@@ -9,6 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate {
+    var name : String
+    
+    
+    init(total:Double, taxPct:Double){
+        self.total = total
+        self.taxPct = taxPct
+        subtotal = total / (taxPct + 1)
+    }
+
+    
     @IBOutlet var totalTexField : UITextField!
     @IBOutlet var taxPctSlider : UISlider!
     @IBOutlet var taxPctLabel : UILabel!
