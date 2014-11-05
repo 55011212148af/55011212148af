@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="test1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MyQ-uW-RDb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="NFt-tq-Hhh">
+                                        <barButtonItem key="rightBarButtonItem" title="Color" id="FU4-5X-H5U">
+                                            <connections>
+                                                <segue destination="81q-Om-XW1" kind="show" identifier="mysegue" id="q52-wb-zBJ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="72" width="400" height="44"/>
+                                </variation>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unknown" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nn2-jK-aH9">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="173" y="247" width="73" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="MyQ-uW-RDb"/>
+                                <exclude reference="nn2-jK-aH9"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="MyQ-uW-RDb"/>
+                                <include reference="nn2-jK-aH9"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="ce7-b9-OeU"/>
+                    <connections>
+                        <outlet property="ColorLabel" destination="nn2-jK-aH9" id="9Jp-ND-LC7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2040" y="407"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="z4p-1B-oJy">
+            <objects>
+                <viewController id="81q-Om-XW1" customClass="ViewController" customModule="test1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FnG-Tu-t9g"/>
+                        <viewControllerLayoutGuide type="bottom" id="e37-zR-PDC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fxo-vg-uk4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5R-kX-1aS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="QZa-6W-045">
+                                        <barButtonItem key="rightBarButtonItem" title="save" id="tbp-YM-NCj">
+                                            <connections>
+                                                <action selector="saveColor:" destination="81q-Om-XW1" id="6KA-aG-YgO"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="6" y="64" width="400" height="44"/>
+                                </variation>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxd-5A-1Be">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="192" y="312" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PL-bu-Kij">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Blue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="240" y="172" width="31" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="ColorselectionButton:" destination="81q-Om-XW1" eventType="touchUpInside" id="a0H-Ip-5DV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQN-yq-gQS">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Red">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="172" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="ColorselectionButton:" destination="81q-Om-XW1" eventType="touchUpInside" id="B3f-Ib-N88"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mY6-W9-6Pt">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Green">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="118" y="172" width="42" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="ColorselectionButton:" destination="81q-Om-XW1" eventType="touchUpInside" id="bZi-mW-6ug"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="c5R-kX-1aS"/>
+                                <exclude reference="gxd-5A-1Be"/>
+                                <exclude reference="8PL-bu-Kij"/>
+                                <exclude reference="SQN-yq-gQS"/>
+                                <exclude reference="mY6-W9-6Pt"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="c5R-kX-1aS"/>
+                                <include reference="gxd-5A-1Be"/>
+                                <include reference="8PL-bu-Kij"/>
+                                <include reference="SQN-yq-gQS"/>
+                                <include reference="mY6-W9-6Pt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="ColorLabel" destination="gxd-5A-1Be" id="SAR-3u-mbQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IhW-gN-ffs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2715" y="407"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PQe-35-p5G">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kp8-xS-Fid" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Y2b-Wf-ZQK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h1u-AX-myh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Rhf-Et-02Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZs-bo-Gi7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="407"/>
+        </scene>
+    </scenes>
+</document>

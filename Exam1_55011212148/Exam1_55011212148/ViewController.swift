@@ -9,16 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var name : String
-    var volume : Double
-    var Price : Double
-    var Totol : Double
-    
-    init(volume:Double,Price:Double){
-        self.volume = volume
-        self.Price = Price
-        Totol = volume / (Price + 1)
-    }
+   
     
     var tipCalc = TipCalculatorModel(total: 33.25,  taxPct: 0.06)
     var possibleTips = Dictionary<Int, (tipAmt:Double, total:Double)>()
